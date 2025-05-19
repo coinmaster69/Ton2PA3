@@ -1,1 +1,0 @@
-print("Sven soll meine Eier lecken")
