@@ -5,8 +5,6 @@ import soundfile as sf
 from pathlib import Path
 from typing import List, Tuple
 
-# --------------- Utility -----------------------------------
-
 def load_track(path: Path, target_sr: int | None = None) -> Tuple[np.ndarray, int]:
     """Read audio, convert to mono, optional resample."""
     data, sr = sf.read(path, always_2d=False)
@@ -52,8 +50,6 @@ def auto_gain_staging(tracks: List[np.ndarray], target_rms_dbfs: float = -20.0) 
     gains_db = [20 * np.log10(g)] * len(tracks)
     return scaled, gains_db
 
-# --------------- File helpers ------------------------------
-
 def unique_path(p: Path) -> Path:
     if not p.exists():
         return p
@@ -73,8 +69,6 @@ def save_file(obj: np.ndarray | str, path: Path, sr: int | None, mode: str):
     else:
         path.write_text(obj, encoding="utf-8")
     return path
-
-# --------------- Pipeline ----------------------------------
 
 def analyse_project(folder: Path,
                     target_sr: int = 48_000,
@@ -140,8 +134,6 @@ def analyse_project(folder: Path,
 
     rpt_path = save_file("".join(report), rep_dir / "pegel_report.txt", None, save_mode)
     print(f"Report: {rpt_path}")
-
-# --------------- CLI ---------------------------------------
 
 if __name__ == "__main__":
     import argparse
