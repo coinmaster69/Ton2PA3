@@ -112,8 +112,8 @@ def analyse_project(folder: Path,
     mix_rms = rms(mix)
     print(f"Nach Gain-Staging: {20*np.log10(mix_rms):.2f} dBFS (Ziel {target_rms_dbfs} dBFS)")
 
-    out_dir = folder.parent / "Output"
-    rep_dir = folder.parent / "Output"
+    out_dir = folder / "Output"
+    rep_dir = folder / "Output"
     out_dir.mkdir(exist_ok=True)
     rep_dir.mkdir(exist_ok=True)
 

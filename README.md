@@ -6,7 +6,7 @@ Analyse & automatisches Gain-Staging von Multitrack-Projekten
 ```
 Ton2PA3/
 ├─ Stems/           # hier liegen die 6 WAV-Tracks
-├─ Output/          # enthält skalierten Mix
+   ├─ Output/       # enthält skalierten Mix & Pegeldaten       
 ├─ Pegeldaten/      # enthält Pegel-Report
 ├─ main.py          # Analyse- & Pegel-Tool
 └─ pyproject.toml   # Abhängigkeiten (poetry)
