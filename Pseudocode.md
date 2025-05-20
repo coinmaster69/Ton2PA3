@@ -11,7 +11,7 @@
 3. **Einzelspur‑Analyse** – für jede Spur  
    1. **Energie** berechnen (Summe der Quadrate)  
    2. **RMS**‑Wert bestimmen (Effektivwert)  
-   3. *(optional)* **Scheitelfaktor** ermitteln (Peak / RMS)
+   3. **Scheitelfaktor** ermitteln (Peak / RMS)
 
 
 4. **Korrelation** zweier ausgewählter Spuren bestimmen  
