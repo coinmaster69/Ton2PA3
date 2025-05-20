@@ -46,10 +46,10 @@ python main.py Stems \
 
 ### Ausgabe
 
-| Pfad          | Inhalt                                                          |
-|---------------|-----------------------------------------------------------------|
-| `Output/`     | `mix_sum.wav` + alle `*_scaled.wav` (skalierten Einzelspuren)   |
-| `Pegeldaten/` | `pegel_report.txt` mit Energie-, RMS-, Crest- & Gain-Werten     |
+| Pfad                  | Inhalt                                                          |
+|-----------------------|-----------------------------------------------------------------|
+| `project_dir/Output/` | `mix_sum.wav` + alle `*_scaled.wav` (skalierten Einzelspuren)   |
+| `project_dir/Output/` | `pegel_report.txt` mit Energie-, RMS-, Crest- & Gain-Werten     |
 
 
 
