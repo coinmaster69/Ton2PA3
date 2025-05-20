@@ -51,13 +51,6 @@ python main.py Stems \
 | `Output/`     | `mix_sum.wav` + alle `*_scaled.wav` (skalierten Einzelspuren)   |
 | `Pegeldaten/` | `pegel_report.txt` mit Energie-, RMS-, Crest- & Gain-Werten     |
 
-## Theorie-Kurzfassung
 
-* **Energie & RMS** – objektives Lautheits-/Leistungs-Maß  
-* **Crest-Faktor** – Verhältnis Peak : RMS → Impulshaltigkeit  
-* **Korrelationsfaktor** – zeigt Phasen-/Inhalts-Gleichheit zweier Spuren  
-* **Gain-Staging** – globaler Gain, um Ziel-RMS zu treffen, ohne Clipping
 
----
 
-© 2025 – Lehrprojekt TON 2 / PA 3 · Autor
