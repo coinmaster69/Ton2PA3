@@ -139,11 +139,10 @@ if __name__ == "__main__":
     import argparse
 
     parser = argparse.ArgumentParser(description="PA3 – Analyse & Pegeln")
-    parser.add_argument("project_dir", type=Path)
-    parser.add_argument("--sr", type=int, default=48_000)
-    parser.add_argument("--target", type=float, default=-20.0)
-    parser.add_argument("--pair", type=int, nargs=2, default=(0, 1))
-    parser.add_argument("--save-mode", choices=["overwrite", "increment"], default="overwrite")
+    parser.add_argument("project_dir", type=Path, help="Ordner mit WAV‑Stems")
+    parser.add_argument("--sr", type=int, default=48_000,help="Samplerate für Verarbeitung [Hz]")
+    parser.add_argument("--target", type=float, default=-20.0,help="Ziel‑RMS in dBFS für die Summe")
+    parser.add_argument("--pair", type=int, nargs=2, default=(0, 1),help="Index‑Paar für Korrelationsanalyse")
     args = parser.parse_args()
 
-    analyse_project(args.project_dir, args.sr, tuple(args.pair), args.target, args.save_mode)
+    analyse_project(args.project_dir, args.sr, tuple(args.pair), args.target)
